@@ -33,7 +33,7 @@ ex: **_traefik.seudominio.com.br_**
 3. **`${TRAEFIK_CREDS}`**
 - As credenciais do traefik podem ser geradas com o comando abaixo substituindo **`$TRAEFIK_EMAIL`** e **`$TRAEFIK_PASS`**
 ```shell
-echo $(htpasswd -nb **$TRAEFIK_EMAIL** **$TRAEFIK_PASS**) | sed -e s/\\$/\\$\\$/g
+echo $(htpasswd -nb $TRAEFIK_EMAIL $TRAEFIK_PASS) | sed -e s/\\$/\\$\\$/g
 ```
 - Por fim execute a stack e aguarde o traefik subir
 ```shell
