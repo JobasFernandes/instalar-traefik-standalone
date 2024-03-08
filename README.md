@@ -39,3 +39,4 @@ echo $(htpasswd -nb $TRAEFIK_EMAIL $TRAEFIK_PASS) | sed -e s/\\$/\\$\\$/g
 ```shell
 docker compose up -d
 ```
+- Acesse o Dashboard do **traefik** **`https://traefik.seudominio.com.br`**
