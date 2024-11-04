@@ -13,7 +13,7 @@ curl -fsSL https://get.docker.com -o install-docker.sh && sudo sh install-docker
 ```
 4. Crie a network **proxy**
 ```shell
-    docker network create proxy
+docker network create proxy
 ```
 5. Instalar o **Apache2-Utils**
 ```shell
