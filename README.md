@@ -2,12 +2,20 @@
 
 ### PRÉ-REQUISITOS
 
-1. VPS Ubuntu **20.04** +
-2. Instale o **Docker** e o **Docker Compose**
+1. VPS Ubuntu **20.04** (minimo)
+2. Atualize seu Ubuntu
 ```shell
-bash <(wget -qO- https://raw.githubusercontent.com/JobasFernandes/instalar-traefik-standalone/main/install.sh)
+sudo apt-get update && sudo apt-get upgrade -y
 ```
-3. Instalar o **Apache2-Utils** _(Comando abaixo)_
+3. Instale o **Docker** e o **Docker Compose**
+```shell
+curl -fsSL https://get.docker.com -o install-docker.sh && sudo sh install-docker.sh  --channel stable
+```
+4. Crie a network **proxy**
+```shell
+    docker network create proxy
+```
+5. Instalar o **Apache2-Utils**
 ```shell
 sudo apt install apache2-utils -y
 ```
